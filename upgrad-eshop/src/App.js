@@ -11,7 +11,7 @@ import AddProductsPage from './components/addproducts-paeg/AddProductsPage';
 function App() {
   return (
     <Router>
-      <NavigationBar isLoggedIn={true} isAdmin={true} />
+      <NavigationBar isLoggedIn={false} isAdmin={true} />
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
