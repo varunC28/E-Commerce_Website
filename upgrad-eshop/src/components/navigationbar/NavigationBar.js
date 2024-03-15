@@ -100,7 +100,7 @@ const NavigationBar = ({ isLoggedIn, isAdmin }) => {
             className="search-bar" 
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            endAdornment={
+            startAdornment={
               <IconButton color="inherit" onClick={handleSearch}>
                 <SearchIcon />
               </IconButton>
@@ -124,11 +124,11 @@ const NavigationBar = ({ isLoggedIn, isAdmin }) => {
             </>
           ) : (
             <>
-              <Button color="inherit" component={Link} to="/login" onClick={handleSignIn}>
-                Log In
+              <Button color="inherit" component={Link} to="/login" onClick={handleSignIn} className="home-button">
+                <u>Log In</u>
               </Button>
               <Button color="inherit" component={Link} to="/signup" onClick={handleSignUp}>
-                Sign Up
+                <u>Sign Up</u>
               </Button>
             </>
           )}

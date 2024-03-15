@@ -29,11 +29,10 @@
 
 
 
-    .home-button,
-    .add-products-button {
+    .home-button{
         text-decoration: underline;
     }
 
     .logout-button {
-        background-color: red;
+      background-color: red !important;
     }

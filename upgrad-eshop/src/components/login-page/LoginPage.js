@@ -12,6 +12,7 @@ function LoginPage() {
             </div>
 
             <div className="form-container">
+                <label style={{position:"absolute",top:"-15px", backgroundColor:"white", height:"20px",left:"5px",padding:"3px"}}>email address</label>
                 <input type="email" placeholder="Email Address *" required/>
                 <input type="password" placeholder="Password *" required/>
                 <button>SIGN IN</button>
